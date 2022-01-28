@@ -37,7 +37,7 @@ Run one single test:\
 Documentation resources:\
 [Cypress home page](https://www.cypress.io/)\
 [Cypress: How it works](https://www.cypress.io/how-it-works)\
-[Installing Cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)\
+[Installing cypress](https://docs.cypress.io/guides/getting-started/installing-cypress)\
 [Writing cypress tests](https://docs.cypress.io/guides/getting-started/writing-your-first-test)\
 [Cypress test exemples](https://example.cypress.io/)\
 <br />

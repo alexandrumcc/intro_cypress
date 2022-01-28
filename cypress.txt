@@ -1,3 +1,8 @@
+"scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run"
+  }
+
 Introducere, Cypress:
 A test runner built for humans.
 Modern testing with cross-browser compatibility.
@@ -10,6 +15,7 @@ https://nodejs.org/en/download/
 https://code.visualstudio.com/download
 
 Download repository:
+https://github.com/alexandrumcc/ui-testing-framework-demo-app
 
 Install npm dependencies:
 npm install
@@ -17,14 +23,17 @@ npm install
 Initiate git repository:
 git init
 
+If Cypress is broken:
+npx cypress verify
+
 Open Cypress GUI:
-npm run cypress:open
+npx cypress open
 
 Run all tests:
-npm run cypress:run
+npx cypress run
 
 Run one single test:
-npx cypress run
+npx cypress run --spec cypress\integration\3-my-tests\7_form_authentication.js
 
 CLI commands:
 git init
@@ -134,6 +143,10 @@ Dezavantaje temporare:
 Nu offera support pentru evenimente native de browser desktop sau mobil, nu exista cy.hover() si cy.tab() de exemplu
 Supportul IFrames este limitat
 Testarea de upload/download pentru fisiere este specific aplicatiilor
+
+node_modules\cypress\lib\tasks
+
+C:\Users\AMUTESCU\OneDrive - COMPUTACENTER\Desktop\intro_cypress\node_modules\cypress\lib\tasks
 
 
 
