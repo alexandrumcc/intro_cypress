@@ -1,0 +1,144 @@
+Introducere, Cypress:
+A test runner built for humans.
+Modern testing with cross-browser compatibility.
+
+Motto:
+First show, then tell
+
+Download and install tools:
+https://nodejs.org/en/download/
+https://code.visualstudio.com/download
+
+Download repository:
+
+Install npm dependencies:
+npm install
+
+Initiate git repository:
+git init
+
+Open Cypress GUI:
+npm run cypress:open
+
+Run all tests:
+npm run cypress:run
+
+Run one single test:
+npx cypress run
+
+CLI commands:
+git init
+npm init
+npm install cypress --save-dev
+npx cypress open
+npx cypress run
+npm run cypress:open
+npm run cypress:run
+
+Resources:
+https://www.cypress.io/
+https://docs.cypress.io/guides/getting-started/installing-cypress
+https://docs.cypress.io/guides/getting-started/writing-your-first-test
+https://example.cypress.io/
+
+Cypress face mai usor:
+Setup-ul testelor
+Scrierea testelor
+Rularea testelor
+Debugging-ul testelor
+
+Ce sunt testele automate end-to-end?:
+Sunt teste automatizate care testeaza aplicatia de la cap la coada, simuland scenarii reale de utilizatori
+
+Beneficii:
+Prindem bug-uri timpuriu, cu o excelenta acoperire de testare
+Economisim ore consumate pe testare manuala
+Producem cod de o calitate ridicata
+
+Beneficii Cypress:
+Rapid in rulare, chiar prea rapid uneori
+Usor de inteles, scris, si de facut debugging
+De incredere, in sensul ca este consecvent pentru testare end-to-end care ruleaza in browser
+Codul este usor de citit, insa menit doar pentru aplicatii pe care le controlam
+Livreaza o exprienta completa de testare end-to-end atat timp cat aplicatia ruleaza in browser
+
+Features:
+Time travel & debugging
+Spies, stubs, clock
+Automatic waiting
+Network traffic control
+Screenshots & videos
+
+Mocha as test runner
+Chai as assertion library
+
+Primul meu test test:
+
+describe("My First Test", function(){
+    it("Visit the kitchen sink", function(){
+        cy.visit("https://example.cypress.io")
+    })
+})
+
+Toate testele incep cu "cy."
+
+Selenium vs Cypress:
+
+Selenium:
+Installam IDE (ex. Intellij)
+Installam Java
+Installam un build tool (ex. Maven)
+Alegem un test framework (ex. TestNG)
+    //Alegem o librarie de asertii (ex. AssertJ)
+    //Installam un tool pentru rulare a testelor ca fisier .xml si generare de raport (Maven Surefire Plugin)
+Installam libraria de Selenium pentru Java (ex. Chrome)
+Installam Webdriver pentru Broswer (ex. Chrome)
+
+Cypress:
+Installam Visual Studio Code
+Installam NodeJS
+Installan Cypress
+
+Recapitularea beneficiilor:
+Cypress este un framework all-in-one
+Este atat pentru Developers cat si pentru QA
+Are acces native la applicatie
+Functioneaza pentru orice framework de front-end
+Este scris exclusiv in JavaScript
+
+Dezavantaje:
+Nu avem NodeJS sau orice alt limbaj de programare server side
+Este mai greu de comunicat cu back-end-ul, insa putem  folosi cy.exec(), cy.task sau cy.request pentru acest lucru
+Nu avem suport pentru mai multe tab-uri, si nici nu vom avea vreo data:
+    - ruleaza in browser
+Conform celor de la Cypress nici nu este nevoie de a testa comportamentul native al browser-ului, cum ar fi tab multiple de browser
+Ideea celor de la Cypress este sa ne testam comportamentul aplicatiei si nu comportamentul native al browser-ului
+Cypress nu poate visita 2 domenii diferite in cadrul aceleasi test
+
+Contra exemplu:
+it("visits Google", () => {
+    cy.visit("https://google.com")
+    cy.visit("cypress.io")
+})
+
+Exemplu corect:
+it("visits Google", () => {
+    cy.visit("https://google.com")
+})
+
+it("visits Cypress", () => {
+    cy.visit("cypress.io")
+})
+
+Dezavantaje temporare:
+Nu offera support pentru evenimente native de browser desktop sau mobil, nu exista cy.hover() si cy.tab() de exemplu
+Supportul IFrames este limitat
+Testarea de upload/download pentru fisiere este specific aplicatiilor
+
+
+
+
+
+
+
+
