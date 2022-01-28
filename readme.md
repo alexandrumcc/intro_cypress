@@ -5,9 +5,9 @@
 ---
 
 Download and install tools:\
-[NodeJS](https://nodejs.org/en/download/)
-[VS Code](https://code.visualstudio.com/download)
-[VS Code](https://desktop.github.com/)\
+[NodeJS](https://nodejs.org/en/download/)\
+[VS Code](https://code.visualstudio.com/download)\
+[GitHub Desktop](https://desktop.github.com/)\
 <br />
 
 Download repository:\
